@@ -1,0 +1,162 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    background-color: #1f2937;
+    padding: 5px 100px;
+}
+
+.header{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    flex: auto;
+}
+
+.one {
+    width: fit-content;
+    flex: auto;
+    display: flex;
+    color: white;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.modal .title {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.modal button {
+    width: 100px;
+    height: 30px;
+    background-color: royalblue;
+    border: 1px solid royalblue;
+    color: white;
+    font-weight: bold;
+}
+
+.image-placeholder {
+    background-color: rgba(121,121,121,0.5);
+    flex: 1 0 50%;
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+button {
+    padding: 8px 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.two {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-header {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+}
+
+.info-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+}
+
+.info-image {
+    border: 2px solid royalblue;
+    border-radius: 8px;
+    height: 100px;
+    width: 100px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.three {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e7eb;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+     font-size: 36px;
+     font-weight: lighter;
+     font-style: italic;
+     color: #1f2937;
+}
+
+.quote-signature {
+    margin-left: auto;
+    font-weight: bolder;
+}
+
+.four {
+    flex: auto;
+    background-color: white;
+}
+
+.one, .two, .three, .four {
+    border: black solid 1px;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.header-links {
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: white;
+    margin-top: auto;
+}
+
+.footer, .header {
+    padding: 10px 0;
+    height: 30px;
+    border: 1px solid white;
+}
