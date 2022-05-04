@@ -26,6 +26,11 @@ ul {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: var(--c-txt-white);
+  }
+
 #first,
 .sectionCenter {
   max-width: 1440px;
