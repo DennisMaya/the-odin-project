@@ -277,7 +277,7 @@ nav ul li:hover {
     padding-inline: 14rem;
     padding-block: 2rem;
     background-color: var(--main-bg-color);
-    color: var(--c-txt-muted);
+    color: var(--main-text-color);
   }
   
   footer a {
