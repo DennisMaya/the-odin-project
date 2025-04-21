@@ -3,7 +3,8 @@ function computerPlay() {
     return myArray[Math.floor(Math.random() * myArray.length)]
 }
 
-function playRound(playerSelection,computerSelection) {
+function playRound(playerSelection, computerSelection) {
+
     if (playerSelection == computerSelection) {
         console.log("Draw!")
         return null;
@@ -45,27 +46,14 @@ function playGame() {
     let computerScore = 0;
     let rounds = 5
     let result = null;
-    for (let i = 0; i < rounds; i++) {
-        const computerSelection = computerPlay();
-        const playerSelection = prompt("Select to play Rock, Paper, or Scissors").toLowerCase().trim();
-        result = playRound(playerSelection,computerSelection);
-        switch(result) {
-            case true:
-                playerScore += 1;
-            case false:
-                computerScore += 1;
-        }
-    }
+    const buttons = document.querySelectorAll('button');
+    buttons.forEach(button => {
+        button.addEventListener('click', () =>{
+            const playerSelection = button.id;
 
-    if(playerScore > computerScore) {
-        console.log("You win!")
-    }
-    else if(playerScore < computerScore) {
-        console.log("You lose!")
-    }
-    else {
-        console.log("Draw game!")
-    }
+            playRound(playerSelection,computerPlay());
+        })
+    });
 }
 
 playGame();
