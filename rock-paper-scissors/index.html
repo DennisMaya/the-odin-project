@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper, Scissors!</title>
-    <script src="javascript.js"></script>
 </head>
 <body>
     <div class="top">
@@ -18,8 +17,11 @@
         <button id="scissors">Scissors</button>
     </div>
     <div class="score">
-        <p>Current Score: </p>
+        <h3 class="score-message" id="scoreMessage">First to score 5 points wins the game!</h3>
+        <p id="playerScore">Your Score: 0</p>
+        <p id="computerScore">Computer's Score: 0</p>
     </div>
+    <script src="javascript.js" defer></script>
 </body>
 
 </html>
