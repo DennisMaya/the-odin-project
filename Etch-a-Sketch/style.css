@@ -6,9 +6,9 @@ body {
 }
 
 .box {
-    background-color: white;
+    background-color: green;
     border: 1px solid black;
-    
+    flex: 1;
 }
 
 .row {
@@ -17,7 +17,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: nowrap;
-    flex: 1 1 auto;
+    flex: 1;
 }
 
 .container {
@@ -26,7 +26,6 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
     width: 960px;
     height: 960px;
 }
