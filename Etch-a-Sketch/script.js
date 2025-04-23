@@ -1,7 +1,11 @@
-const inputElement = document.getElementById("gridInput");
 const updateGridBtn = document.getElementById("updateGridBtn");
 
 updateGridBtn.addEventListener('click', () => handleClick());
+
+function handleHover(elem){
+    console.log("hover");
+    elem.className = "usedBox";
+}
 
 function handleClick(){
     do{
@@ -29,11 +33,18 @@ function updateGridSize(gridSize){
         gridContainer.appendChild(row)
         for(let j = 0; j < gridSize; j++){
             const box = document.createElement("div");
-            box.className = "box"
+            box.className = "box";
+            // box.id = "row: " + (i + 1) + " col: " + (j + 1);
             row.appendChild(box);
-            console.log("row: " + (i + 1) + " col: " + (j + 1) + ": Div Created");   
+            // console.log("row: " + (i + 1) + " col: " + (j + 1) + ": Div Created");   
         }
     }
+    const elements = document.querySelectorAll(".box");
+    // console.log(elements);
+    elements.forEach(elem => {
+        // console.log(elem);
+        elem.addEventListener("mouseenter", handleHover(elem));
+    });
 }
 
 function setup(){
@@ -42,4 +53,5 @@ function setup(){
 }
 
 setup();
+
 
