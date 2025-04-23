@@ -6,7 +6,7 @@ body {
 }
 
 .box {
-    background-color: green;
+    background-color: white;
     flex: 1;
 }
 
@@ -19,8 +19,8 @@ body {
 }
 
 .container {
-    background-color: lightblue;
-    border: 4px solid maroon;
+    background-color: white;
+    border: 4px solid black;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;

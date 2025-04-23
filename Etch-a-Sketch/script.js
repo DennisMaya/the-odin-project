@@ -2,6 +2,15 @@ const updateGridBtn = document.getElementById("updateGridBtn");
 
 updateGridBtn.addEventListener('click', () => handleClick());
 
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+
 function handleClick(){
     do{
         var gridSize = parseInt(window.prompt("How many boxes do you want per side of this grid.\nEnter a number from 16 to 100:"));
@@ -31,7 +40,7 @@ function updateGridSize(gridSize){
             // box.id = "row: " + (i + 1) + " col: " + (j + 1);
             row.appendChild(box);
             box.addEventListener("mouseover", () => {
-                box.style.backgroundColor = "red";
+                box.style.backgroundColor = getRandomColor();
             })
             // console.log("row: " + (i + 1) + " col: " + (j + 1) + ": Div Created");   
         }
