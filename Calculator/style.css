@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputBox {
+    background-color: white;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.numBtn, .operator {
+    background-color: grey;
+    width: 50px;
+    height: 50px;
+}
