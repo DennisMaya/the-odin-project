@@ -11,6 +11,8 @@ body {
 }
 
 .inputBox {
+    border: 3px;
+    border-color: black;
     background-color: white;
     height: 50px;
     justify-content: center;
@@ -21,4 +23,5 @@ body {
     background-color: grey;
     width: 50px;
     height: 50px;
+    font-size: large;
 }
