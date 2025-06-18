@@ -25,3 +25,10 @@ body {
     height: 50px;
     font-size: large;
 }
+
+.numBtn:hover {
+    background-color: lightgrey;
+}
+.operator:hover {
+    background-color: lightgrey;
+}
