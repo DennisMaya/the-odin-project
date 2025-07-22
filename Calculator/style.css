@@ -11,13 +11,14 @@ body {
 }
 
 .inputBox {
+    display: flex;
     height: 50px;
     width: 200px;
     border: 1px;
     border-style: solid;
     border-color: black;
     background-color: white;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
