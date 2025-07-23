@@ -12,8 +12,8 @@ function appendValue(value){
     currentOperationScreen.textContent += value;
 }
 
-function clear(){
-    console.log("clear");
+function allClear(){
+    console.log("all clear");
     currentOperationScreen.textContent = "0";
     lastOperationScreen.textContent = "";
     firstOperand = '';
