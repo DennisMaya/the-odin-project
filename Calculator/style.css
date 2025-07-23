@@ -38,9 +38,6 @@ button{
     font-size: large;
 }
 
-.numBtn:hover {
-    background-color: lightgrey;
-}
-.operator:hover {
+button:hover {
     background-color: lightgrey;
 }

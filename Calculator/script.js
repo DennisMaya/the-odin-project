@@ -28,7 +28,11 @@ function resetScreen(){
 }
 
 function deleteLast(){
+    console.log("delete")
     currentOperationScreen.textContent = currentOperationScreen.textContent.slice(0,-1);
+    if(currentOperationScreen.textContent === null){
+        currentOperation.textContent += "0";
+    } 
 }
 
 function setOperation(operator) {
