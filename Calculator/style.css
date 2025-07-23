@@ -5,12 +5,13 @@ body {
     align-items: center;
 }
 
-.buttonContainer {
+.buttons {
     display: flex;
     flex-direction: column;
+    flex-grow: 1 1;
 }
 
-.inputBox {
+.display {
     display: flex;
     height: 50px;
     width: 200px;
@@ -22,7 +23,7 @@ body {
     align-items: center;
 }
 
-.numBtn, .operator {
+button{
     background-color: grey;
     width: 50px;
     height: 50px;

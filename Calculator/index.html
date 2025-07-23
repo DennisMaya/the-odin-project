@@ -8,37 +8,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="inputBox"> </div>
-    <div class="buttonContainer">
-        <div>
-            <button class="operator" id="leftPerBtn">(</button>
-            <button class="operator" id="rightPerBtn">)</button>
-            <button class="operator" id="modBtn">%</button>
-            <button class="operator" id="clearBtn">AC</button>
-        </div>
-        <div>
-            <button class="numBtn" id="sevenBtn">7</button>
-            <button class="numBtn" id="eightBtn">8</button>
-            <button class="numBtn" id="nineBtn">9</button>
-            <button class="operator">/</button>
-        </div>
-        <div>
-            <button class="numBtn" id="fourBtn">4</button>
-            <button class="numBtn" id="fiveBtn">5</button>
-            <button class="numBtn" id="sixBtn">6</button>
-            <button class="operator">*</button>
-        </div>
-        <div>
-            <button class="numBtn" id="oneBtn">1</button>
-            <button class="numBtn" id="twoBtn">2</button>
-            <button class="numBtn" id="threeBtn">3</button>
-            <button class="operator">-</button>
-        </div> 
-        <div>
-            <button class="numBtn" id="decimalBtn">.</button>
-            <button class="numBtn" id="zeroBtn">0</button>
-            <button class="operator">=</button>
-            <button class="operator">+</button>
+    <div class="calculator">
+        <input type="text" class="display" id="display"/>
+        <div class="buttons">
+            <div>
+                <button onclick="clearDisplay()">AC</button>
+                <button onclick="deleteLast()">←</button>
+            </div>
+            <div>
+                <button onclick="appendValue('7')">7</button>
+                <button onclick="appendValue('8')">8</button>
+                <button onclick="appendValue('9')">9</button>
+                <button onclick="appendValue('/')">÷</button>
+            </div>
+            <div>
+                <button onclick="appendValue('4')">4</button>
+                <button onclick="appendValue('5')">5</button>
+                <button onclick="appendValue('6')">6</button>
+                <button onclick="appendValue('*')">*</button>
+            </div>
+            <div>
+                <button onclick="appendValue('1')">1</button>
+                <button onclick="appendValue('2')">2</button>
+                <button onclick="appendValue('3')">3</button>
+                <button onclick="appendValue('-')">-</button>
+            </div> 
+            <div>
+                <button onclick="appendValue('.')" >.</button>
+                <button onclick="appendValue('0')" >0</button>
+                <button onclick="appendValue('=')">=</button>
+                <button onclick="appendValue('+')">+</button>
+            </div>
         </div>
     </div>
     <script src="script.js" defer></script>
