@@ -1,15 +1,46 @@
-let display = document.getElementById("display");
+let lastOperationScreen = document.getElementById("lastOperationScreen");
+let currentOperationScreen = document.getElementById("currentOperationScreen");
+let firstOperand = '';
+let secondOperand = '';
+let currentOperation = null;
+let shouldResetScreen = false;
 
 function appendValue(value){
-    display.value += value;
+    if(currentOperationScreen.textContent==="0"||shouldResetScreen) {
+        resetScreen();
+    }
+    currentOperationScreen.textContent += value;
 }
 
-function clearDisplay(){
-    display.value = ""
+function clear(){
+    console.log("clear");
+    currentOperationScreen.textContent = "0";
+    lastOperationScreen.textContent = "";
+    firstOperand = '';
+    secondOperand = '';
+    currentOperation = null;
+    shouldResetScreen = false;
+}
+
+function resetScreen(){
+    currentOperationScreen.textContent = "";
+    shouldResetScreen = false
 }
 
 function deleteLast(){
-    display.value = display.value.slice(0,-1);
+    currentOperationScreen.textContent = currentOperationScreen.textContent.slice(0,-1);
+}
+
+function setOperation(operator) {
+    if (currentOperation !== null) evaluate();
+    firstOperand = currentOperationScreen.textContent;
+    currentOperation = operator
+    lastOperationScreen.textContent = `${firstOperand} ${currentOperation}`
+    shouldResetScreen = true
+  }
+
+function evaluate(){
+    
 }
 
 function operate(a,b,operator){

@@ -8,20 +8,28 @@ body {
 .buttons {
     display: flex;
     flex-direction: column;
-    flex-grow: 1 1;
+    justify-self: center;
 }
 
-.display {
-    display: flex;
-    height: 50px;
-    width: 200px;
-    border: 1px;
-    border-style: solid;
-    border-color: black;
-    background-color: white;
-    justify-content: flex-end;
-    align-items: center;
-}
+.screen {
+    padding: 10px 20px;
+    border: 2px black solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  
+  .screen-last {
+    min-height: 32px;
+    font-size: 20px;
+  }
+  
+  .screen-current {
+    min-height: 64px;
+    font-size: 40px;
+  }
 
 button{
     background-color: grey;
