@@ -38,17 +38,31 @@ function deleteLast(){
 function setOperation(operator) {
     if (currentOperation !== null) evaluate();
     firstOperand = currentOperationScreen.textContent;
-    currentOperation = operator
-    lastOperationScreen.textContent = `${firstOperand} ${currentOperation}`
-    shouldResetScreen = true
+    currentOperation = operator;
+    lastOperationScreen.textContent = `${firstOperand} ${currentOperation}`;
+    shouldResetScreen = true;
   }
 
-function evaluate(){
-    
+function evaluateExpression(){
+    if(currentOperation === null || shouldResetScreen) return;
+    if(currentOperation === "/" && currentOperationScreen.textContent === "0"){
+        alert("You can't divide by 0!");
+        return;
+    }
+    secondOperand = currentOperationScreen.textContent;
+    currentOperationScreen.textContent = roundResult(operate(firstOperand,secondOperand,currentOperation));
+    lastOperationScreen.textContent = `${firstOperand} ${currentOperation} ${secondOperand} =`;
+    currentOperation = null;
+}
+
+function roundResult(number){
+    return Math.round(number * 1000) / 1000;
 }
 
 function operate(a,b,operator){
     result = null;
+    a = Number(a);
+    b = Number(b);
     switch(operator) {
         case '+':
             result = add(a,b);
