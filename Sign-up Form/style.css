@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+}
+.left {
+    background-image: url('https://images.unsplash.com/photo-1565120130297-9c7c3e2d0b8d');
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.left .logo {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+.right {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.right h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.right p {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.right h2 {
+    margin-bottom: 20px;
+}
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+form input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+form .full-width {
+    grid-column: span 2;
+}
+form button {
+    grid-column: span 2;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+form button:hover {
+    background-color: #45a049;
+}
+form a {
+    grid-column: span 2;
+    margin-top: 10px;
+    color: #4CAF50;
+    text-decoration: none;
+    text-align: center;
+}
+form a:hover {
+    text-decoration: underline;
+}
