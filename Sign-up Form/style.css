@@ -20,6 +20,7 @@ body {
     justify-content: center;
     color: white;
     text-align: center;
+    position: relative;
 }
 .left .banner {
     background: rgba(0, 0, 0, 0.5);
@@ -116,4 +117,14 @@ form a {
 }
 form a:hover {
     text-decoration: underline;
+}
+.photo-credit {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 12px;
+  color: white;
+  opacity: 0.7;
+  font-style: italic;
+  transform: translateX(50%);
 }
