@@ -1,3 +1,9 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(Norse-Bold.otf);
+    font-weight: normal;
+    font-style: normal;
+}
 body {
     display: flex;
     font-family: Arial, sans-serif;
@@ -15,10 +21,15 @@ body {
     color: white;
     text-align: center;
 }
-.left .logo {
+.left .banner {
     background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
+}
+.banner{
+    font-family: Norse-Bold, sans-serif;
+    font-size: 24px;
+    font-weight: normal;
 }
 .right {
     flex: 2;
