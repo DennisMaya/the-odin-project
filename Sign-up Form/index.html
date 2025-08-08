@@ -18,15 +18,31 @@
         <p><em>You know</em> you want to.</p>
         <h2>Let's do this!</h2>
         <form>
-            <input type="text" name="first_name" placeholder="First Name" required>
-            <input type="text" name="last_name" placeholder="Last Name" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="tel" name="phone_number" placeholder="Phone Number">
-            <input type="password" name="password" placeholder="Password" required>
-            <input type="password" name="confirm_password" placeholder="Confirm Password" required>
-            <button type="submit">Create Account</button>
-            <a href="#">Already have an account? Log in</a>
+            <div>
+                <label for="first_name">FIRST NAME</label>
+                <input type="text" name="first_name" placeholder="First Name" required>
+                
+                <label for="last_name">LAST NAME</label>
+                <input type="text" name="last_name" placeholder="Last Name" required>
+            </div>      
+            <div>
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" placeholder="Email" required>
+
+                <label for="phone_number">PHONE NUMBER</label>
+                <input type="tel" name="phone_number" placeholder="Phone Number">
+            </div>
+            <div>
+                <label for="password">PASSWORD</label>
+                <input type="password" name="password" placeholder="Password" required>
+
+                <label for="confirm_password">CONFIRM PASSWORD</label>
+                <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+            </div>
         </form>
+                    
+        <button type="submit">Create Account</button>
+        <a href="#">Already have an account? Log in</a>
     </div>
 </body>
 
