@@ -14,14 +14,6 @@ View the live portfolio here:
 ## 👨‍💻 About Me
 
 **Dennis Maya**  
-Detail-oriented and pragmatic developer with a background in software QA and retail operations. I enjoy building clean, user-friendly interfaces and solving problems through iterative improvement.
-
----
-
-
-## 👨‍💻 About Me
-
-**Dennis Maya**  
 Detail-oriented and pragmatic developer with a background in software QA.
 
 ---
